@@ -4,8 +4,8 @@
     background: #ffffff;
     top: 0;
     left: 0;
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 99999;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .04);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .04);
     padding:10px 0;
@@ -35,34 +35,37 @@
         }
         .submenu{
           position: fixed;
-    height: 100%;
-    width: 230px;
-    left: -300px;
-    top: 0;
-    padding-left: 65px;
-    display: block;
-    background: #fff;
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
-    box-shadow: 8px 22px 23px rgba(0, 0, 0, .08);
-    -webkit-transition: all .34s ease-in;
-    transition: all .34s ease-in;
+            height: 100%;
+            width: 230px;
+            left: -300px;
+            top: 0;
+            display: block;
+            background: #fff;
+            -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+            box-shadow: 8px 22px 23px rgba(0, 0, 0, .08);
+            -webkit-transition: all .34s ease-in;
+            transition: all .34s ease-in;
     li{
         a{
             width: 100%;
-    padding: 16px 14px;
-    padding-left: 27px;
-    color: #83839c;
-    margin: 0;
-    font-weight: 500;
-    text-align: left;
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: auto;
-    border-bottom: 1px solid #f7f7fc;
-    font-size: 16px;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+            padding: 16px 14px;
+            padding-left: 27px;
+            color: #83839c;
+            margin: 0;
+            font-weight: 500;
+            text-align: left;
+            display: block;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: auto;
+            border-bottom: 1px solid #f7f7fc;
+            font-size: 16px;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            span{
+                display: inline-block;
+                margin-right: 5px;
+            }
         }
         }
         }
@@ -103,7 +106,7 @@
         }
         &:hover{
             .submenu{
-               left: 0;
+               left: 70px;
                 -webkit-transition: all .34s ease-out;
                 transition: all .34s ease-out;
 
