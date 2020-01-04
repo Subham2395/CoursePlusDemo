@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
        <div className="inner-footer">
-       		<p>© 2019 Dummy. All Rights Reserved.</p>
+       		<p>© 2019 <strong>Dummy</strong>. All Rights Reserved.</p>
        		<ul className="foot-social">
        			<li><a href="#">
        			<FontAwesome name="fab fa-facebook-square"/>
